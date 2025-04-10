@@ -1,0 +1,115 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+.dropzone {
+  border: 2px dashed #b8b8b8;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+}
+
+.dropzone:hover,
+.dropzone.active {
+  border-color: #4285f4;
+  background-color: rgba(66, 133, 244, 0.05);
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropzone-hint {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.files-section {
+  margin: 2rem 0;
+}
+
+.files-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.files-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.drag-instruction {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.files-list {
+  list-style: none;
+  padding: 0;
+}
+
+.download-section {
+  background-color: #e9f5ff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.download-section h2 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+}
+
+.download-section p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.download-btn {
+  background-color: #0066cc;
+  padding: 12px 30px;
+  font-size: 18px;
+}
+
+.download-btn:hover {
+  background-color: #0055aa;
+}
+
+@media (max-width: 768px) {
+  .files-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .files-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
